@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypeScript Tutorial</title>
+    <style>
+        #list {
+            list-style: none;
+            padding: 0;
+        }
+        #list label.done {
+          text-decoration: line-through;
+        }
+
+        .container {
+          width: 20%;
+          margin: 5rem auto;
+        }
+
+        form {
+          display: flex;
+          flex-wrap: nowrap;
+        }
+
+        form input {
+          width: 90%;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form id="new_task_form">
+        <input type="text" id="new_task_title" />
+        <button type="submit">
+          Add
+        </button>
+      </form>
+      <ul id="list"></ul>
+    </div>
+  </body>
+  <script src="dest/script.js"></script>
+</html>
